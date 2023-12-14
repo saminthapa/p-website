@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="style1.css">
+    <!-- Option 1: Include in HTML -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+        <nav>
+            <li><a href="#header"><img src="./logo.png" class="logo"></a></li>
+            
+            <ul id="sidemenu">
+                <i class="bi bi-x" onclick="closemenu()"></i>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>               
+                <li><a href="#services">Services</a></li>
+                <!--<li><a href="#portfolio">Portfolio</a></li>-->
+                <li><a href="#blog"> <span>Blog</span></a></li>
+                <li><a href="#contact">Contact</a></li> 
+                
+                
+            </ul>
+            <i class="bi bi-list" onclick="openmenu()"></i>
+
+            <img class="img" src="./C3.png"
+             
+            width="450px";
+            height="450px" ;
+            background-size="cover";
+            background-position="center";>
+            </nav>
+            <div class="header-text">
+                <p>Web. Developer</p>
+                <h1>Namaste!!, I'm <span> Samin</span> <br> Thapa Kshetry From Nepal</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./1.png" 
+                    width="700px";
+                    height="500px" ;
+                    >
+             
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi! I'm doing Bachelor of Information Technology from Tribhuvan University and my specialization is Web. app. Development. I’m a technology enthusiast and wish to use my technical acumen to contribute to a team that works at skill and also creates a positive impact in society. </p>
+
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('languages')">Knowledge</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Virtual Assistant</span><br>Comman task to Advance</li>
+                            <li><span>Web Development</span><br>HTML, CSS, JavaScript, ReactJS and Bootstrap</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023 - Current</span><br>Freelancer as Web/App Developer</li>
+                            <li><span>2020 - 2023</span><br>Accountant</li>
+                            <li><span>2019 - 2020</span><br>Advance Computer Course</li>
+                            <li><span>2018 - 2019</span><br>National Cadet Crops</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023 - Current</span><br>Bachelor of Information Technology</li>
+                            <li><span>2019 - 2021</span><br>+2 at Computer Science</li>
+                            <li><span>2019 - 2020</span><br>Advance Computer Course</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="languages">
+                        <ul>
+                            <li><span>HTML</span></li>
+                            <li><span>CSS</span></li>
+                            <li><span>Bootstrap</span></li>
+                            <li><span>JavaScript</span></li>
+                            <li><span>ReactJS</span></li>
+                            <li><span>Python</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>  
+            <div class="services-list">
+                <div>
+                    <i class="bi bi-book-half"></i>
+                    <h1>Website Development</h1>
+                    <p>I can develop quality website for you and your bussiness , so that you can save your valuable time and i can help to turn your website idea into a reality.</p>
+                        <a href="#contact">Contact Me</a>
+                                              
+                </div>
+                <div>
+                    <i class="bi bi-bookmarks-fill"></i>
+                    <h1>Virtual Assistant</h1>
+                    <p>I can be your truthfull Assistant from Comman task to Advance.</p>
+                    <a href="#contact">Contact Me</a>
+                   
+                </div>
+            </div> 
+        </div>
+    </div>
+
+
+<!-- <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>    
+        <div class="work-list">
+            <div class="work">
+                <img src="./img/P2.jpg" >
+            <div class="layer">
+                <i class="bi bi-link"></i> 
+                <h3>Portfolio Website</h3>
+                <p>This website will help you to know about me.</p>
+            <a href="./index.html"><i class="bi bi-link"></i></a>
+            </div>
+            </div>
+            <div class="work">
+                <img src="./img/P1.jpg" >
+                <div class="layer"> 
+                    <h3>Personal Website</h3>
+                    <p>This website will help you to know about me.</p>
+                <a href="./index.html"><i class="bi bi-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./img/P3.jpg">
+                <div class="layer">
+                    <h3>Portfolio Website</h3>
+                    <p>This website will help you to know about me.</p>
+                <a href="./index.html"><i class="bi bi-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#potfolio" class="btn">See More</a>
+    </div>
+</div> -->
+
+<div id="blog">
+    <div class="container">
+        <h1 class="sub-title">My Blog</h1>  
+        <div class="blog-list">
+            <div>
+                <i><img  src="./P2.jpg" width="100%" height="240px"></i>
+                <h2>Top 10 Most In-Demand Programming Language</h2>
+                <a href="./TPL.html">Learn In-depth(click here)</a>
+                 </div>
+
+                 <div>
+                    <i><img src="./P3.jpg" width="100%" height="240px"></i>
+                    <h2>Roadmap to become Web Developer</h2>
+                     <a href="./web.html">Learn In-depth(click here)</a>
+                     </div>
+                </div>
+            </div>
+        </div>
+
+
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                 <h1 class="sub-title">Contact Me</h1>
+                <p> <i class="bi bi-envelope"></i> thapakshterysamin@gmail.com </p>
+                <p> <i class="bi bi-telephone-fill"></i> +977 9826270167 </p> <br>
+                <h1 class="sub-title">Get in touch</h1>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/samin.thapa.90"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.instagram.com/im_saminthapa/"><i class="bi bi-instagram"></i></a>
+                    <a href="https://twitter.com/SaminThapa10"><i class="bi bi-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/samin-thapa-kshetry-96043425b/"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://www.youtube.com/channel/UC2cIebOuovVdBCD4rKOIiWQ"><i class="bi bi-youtube"></i></a>
+                    <a href="https://github.com/saminthapa"><i class="bi bi-github"></i></a>
+                </div>
+               <!--- <a href="./cv.pdf" download  class="btn btn2"><i class="bi bi-file-earmark-arrow-down-fill"></i>  View CV </a>               -->
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Full Name">
+                    <input type="email" name="Email" placeholder="Your Email">
+                    <input type="subject" name="Subject" placeholder="Subject of Your Message">
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <a href="#">&copy;2023 | im_saminthapa | STK </a>
+    </footer>
+</div>
+
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script> 
+  
+  <script>
+     var sidemenu = document.getElementById("sidemenu");
+
+     function openmenu(){
+        sidemenu.style.right ="200px";
+     }
+     function closemenu(){
+        sidemenu.style.right ="-200px";
+     }
+  </script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzHXeUAVUFuksFRpFcWOd7TeS0gSUaY0lepLrA3tozPDFpfGTFrtwt9gFoN-OrB0YB2Ww/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully."
+            setTimeout(function(){
+                msg.innerHTML =""
+            },7000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+ 
+</body>
+</html>
