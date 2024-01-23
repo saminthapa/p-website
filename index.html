@@ -35,7 +35,7 @@
             background-position="center";>
             </nav>
             <div class="header-text">
-                <p>Web. Developer</p>
+                <p>Web. Developer / Mentor</p>
                 <h1>Namaste!!, I'm <span> Samin</span> <br> Thapa Kshetry From Nepal</h1>
             </div>
         </div>
@@ -52,18 +52,18 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>Hi! I'm doing Bachelor of Information Technology from Tribhuvan University and my specialization is Web. app. Development. I’m a technology enthusiast and wish to use my technical acumen to contribute to a team that works at skill and also creates a positive impact in society. </p>
+                    <p>Hi! I'm doing Bachelor of Information Technology from Tribhuvan University and my specialization is Web-App. Development. I’m a technology enthusiast and wish to use my technical acumen to contribute to a team that works at skill and also creates a positive impact in society. </p>
 
                     <div class="tab-title">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links active-link" onclick="opentab('skill')">Skill</p>
                         <p class="tab-links" onclick="opentab('experience')">Experience</p>
                         <p class="tab-links" onclick="opentab('education')">Education</p>
                         <p class="tab-links" onclick="opentab('languages')">Knowledge</p>
                     </div>
-                    <div class="tab-contents active-tab" id="skills">
+                    <div class="tab-contents active-tab" id="skill">
                         <ul>
-                            <li><span>Virtual Assistant</span><br>Comman task to Advance</li>
-                            <li><span>Web Development</span><br>HTML, CSS, JavaScript, ReactJS and Bootstrap</li>
+                            <li><span>Mentor</span><br>Website Development</li>
+                            <li><span>Web Development</span><br>ReactJS, JavaScript, Bootstrap, Tailwind CSS, HTML and CSS</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="experience">
@@ -83,12 +83,14 @@
                     </div>
                     <div class="tab-contents" id="languages">
                         <ul>
+                            <li>ReactJS</li>
+                            <li><span>JavaScript</span></li>
+                            <li>Bootstrap</li>
+                            <li>Tailwind CSS</li>
                             <li><span>HTML</span></li>
                             <li><span>CSS</span></li>
-                            <li><span>Bootstrap</span></li>
-                            <li><span>JavaScript</span></li>
-                            <li><span>ReactJS</span></li>
                             <li><span>Python</span></li>
+                            <li><span>C</span></li>
                         </ul>
                     </div>
                 </div>
@@ -102,15 +104,15 @@
             <div class="services-list">
                 <div>
                     <i class="bi bi-book-half"></i>
-                    <h1>Website Development</h1>
-                    <p>I can develop quality website for you and your bussiness , so that you can save your valuable time and i can help to turn your website idea into a reality.</p>
+                    <h1>Website Development</h1> <br>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I can turn your website idea into a reality. I can develop quality website for you and your bussiness , so that you can save your valuable time.</p><br>          
                         <a href="#contact">Contact Me</a>
                                               
                 </div>
                 <div>
                     <i class="bi bi-bookmarks-fill"></i>
-                    <h1>Virtual Assistant</h1>
-                    <p>I can be your truthfull Assistant from Comman task to Advance.</p>
+                    <h1>Mentor</h1> <br>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I can be your or your Company's truthfull Mentor as a Website Developer.</p><br>
                     <a href="#contact">Contact Me</a>
                    
                 </div>
@@ -158,19 +160,23 @@
         <h1 class="sub-title">My Blog</h1>  
         <div class="blog-list">
             <div>
-                <i><img  src="./P2.jpg" width="100%" height="240px"></i>
-                <h2>Top 10 Most In-Demand Programming Language</h2>
-                <a href="./TPL.html">Learn In-depth(click here)</a>
-                 </div>
+                <i><img  src="./P5.jpg" class="blog-img"></i>
+                <h4>&nbsp;&nbsp;&nbsp;&nbsp; 8 JUL 2023</h4>
+                <a href="./TPL.html">Top 10 Most In-Demand Programming Language</a><br><br>
+                <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   Nowaday's technology sectors are rapidly developing, programming languages play a vital role in powering various........</h4><br>
+                <a href="./TPL.html">Read More</a> <br><br>
+            </div>
 
                  <div>
-                    <i><img src="./P3.jpg" width="100%" height="240px"></i>
-                    <h2>Roadmap to become Web Developer</h2>
-                     <a href="./web.html">Learn In-depth(click here)</a>
-                     </div>
-                </div>
+                    <i><img src="./P4.jpg" class="blog-img"></i>
+                    <h4>&nbsp;&nbsp;&nbsp;&nbsp; 11 JUL 2023</h4>
+                    <a href="./web.html">Roadmap to become Web Developer</a>  <br><br>  
+                    <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A web developer is a programmer who specializes in the creation, design, and maintenance of websites and........</h4><br>
+                    <a href="./web.html">Read More</a> <br><br>
+                 </div>
             </div>
         </div>
+ </div>
 
 
 
@@ -193,23 +199,24 @@
                <!--- <a href="./cv.pdf" download  class="btn btn2"><i class="bi bi-file-earmark-arrow-down-fill"></i>  View CV </a>               -->
             </div>
             <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your Full Name">
-                    <input type="email" name="Email" placeholder="Your Email">
-                    <input type="subject" name="Subject" placeholder="Subject of Your Message">
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <form action="https://api.web3forms.com/submit" method="POST" class="form">
+                    <input type="hidden" name="access_key" value="cd3ba4bd-6a65-4fd9-9085-a1d36f26482f">
+                    <input type="text" name="Name" placeholder="Your Full Name *" required>
+                    <input type="email" name="Email" placeholder="Your Email *" required>
+                    <input type="subject" name="Subject" placeholder="Subject of Your Message *" required>
+                    <textarea name="Message" placeholder="Your Message *" class="contact-inputs" required></textarea>
                     <button type="submit" class="btn">Submit</button>
                 </form>
-                <span id="msg"></span>
+              
             </div>
         </div>
     </div>
     <footer>
-        <a href="#">&copy;2023 | im_saminthapa | STK </a>
+        <a href="#"> &copy;2023 | im_saminthapa | STK </a>
     </footer>
 </div>
 
-  <script>
+<script>
     var tablinks = document.getElementsByClassName("tab-links");
     var tabcontents = document.getElementsByClassName("tab-contents");
     function opentab(tabname){
@@ -223,35 +230,6 @@
         document.getElementById(tabname).classList.add("active-tab");
     }
   </script> 
-  
-  <script>
-     var sidemenu = document.getElementById("sidemenu");
-
-     function openmenu(){
-        sidemenu.style.right ="200px";
-     }
-     function closemenu(){
-        sidemenu.style.right ="-200px";
-     }
-  </script>
-  <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbzHXeUAVUFuksFRpFcWOd7TeS0gSUaY0lepLrA3tozPDFpfGTFrtwt9gFoN-OrB0YB2Ww/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Message sent successfully."
-            setTimeout(function(){
-                msg.innerHTML =""
-            },7000)
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
-
  
 </body>
 </html>
